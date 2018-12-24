@@ -19,7 +19,7 @@
 
 <div class="container-fluid sticky-top p-0 nav-container">
     <div class="row w-100 p-0 m-0">
-        <nav class="navbar navbar-expand-lg col-12 col-lg-9 mx-auto p-0 p-lg-2" style="min-height: 50px">
+        <nav class="navbar navbar-expand-lg col-12 col-lg-9 mx-auto p-0 p-lg-2">
             <div class="navbar-toggler-container">
                 <button class="navbar-toggler mr-3 p-0" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -97,14 +97,14 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row first-row mt-5">
             <div class="col-12 col-lg-6">
                 <div class="skills-chart">
                     <div class="skills-chart__box">
                         <p class="skills-chart__name">web design</p>
                         <p class="skills-chart__percentage">60%</p>
                         <div class="skills-chart__skill">
-                            <div class="skills-chart__level" style="width: 60%"></div>
+                            <div class="skills-chart__level" id="webDesign" ></div>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                         <p class="skills-chart__name">web development</p>
                         <p class="skills-chart__percentage">70%</p>
                         <div class="skills-chart__skill">
-                            <div class="skills-chart__level" style="width: 70%"></div>
+                            <div class="skills-chart__level" id="webDevelopment" ></div>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                         <p class="skills-chart__name">Seo</p>
                         <p class="skills-chart__percentage">45%</p>
                         <div class="skills-chart__skill">
-                            <div class="skills-chart__level" style="width: 45%"></div>
+                            <div class="skills-chart__level" id="seo" ></div>
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                         <p class="skills-chart__name">UI/UX</p>
                         <p class="skills-chart__percentage">30%</p>
                         <div class="skills-chart__skill">
-                            <div class="skills-chart__level" style="width: 30%"></div>
+                            <div class="skills-chart__level" id="uiUx" ></div>
                         </div>
                     </div>
                 </div>
@@ -247,6 +247,24 @@
         });
         $('.scroll-to-top').click(function () {
             $('html,body').animate({scrollTop: 0}, 1000)
+        });
+
+        var targetEl = $('.first-row'),
+            targetElOffset = targetEl.offset().top/2,
+            documentEl = $(document),
+            webDesignEl = $('#webDesign'),
+            webDevelopmentEl = $('#webDevelopment'),
+            seo = $('#seo'),
+            uiUxEl = $('#uiUx'),
+            first =true;
+        documentEl.on('scroll',function(){
+           if(documentEl.scrollTop() > targetElOffset && first === true){
+               webDesignEl.toggleClass('w-60');
+               webDevelopmentEl.toggleClass('w-70');
+               seo.toggleClass('w-45');
+               uiUxEl.toggleClass('w-30');
+               first = false;
+           }
         });
     });
 </script>
