@@ -33,16 +33,16 @@
             <div class="collapse navbar-collapse" style="box-sizing: border-box" id="navbarSupportedContent">
                 <ul class="navbar-nav text-center px-0">
                     <li class="nav-item active">
-                        <a class="nav-link px-3 py-2" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link px-3 py-2" href="#home">Home</a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link px-3 py-2" href="#">about</a>
+                        <a class="nav-link px-3 py-2" href="#about">about</a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link px-3 py-2" href="#">contact</a>
+                        <a class="nav-link px-3 py-2" href="#contact">contact</a>
                     </li>
                     <li class="nav-item text-center">
-                        <a class="nav-link px-3 py-2" href="#">service</a>
+                        <a class="nav-link px-3 py-2" href="#projects">projects</a>
                     </li>
                 </ul>
                 <img class="mr-auto logo" src="images/logo.png" alt="logo!">
@@ -53,7 +53,7 @@
 </div>
 
 <header>
-    <div class="header">
+    <div class="header" id="home">
         <!--BEM methodology-->
         <div class="slide">
             <div class="slide__content">
@@ -65,10 +65,18 @@
                 </div>
             </div>
         </div>
+        <div class="social-media">
+            <a class="item github" href="http://github.com/SRMT2" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="item linkedin" href="http://linkedin.com/in/rezamirdamadi" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
     </div>
 </header>
 <div class="container">
-    <section class="about" style="direction: ltr ; display: block">
+    <section class="about" id="about">
 
         <div class="row">
             <div class="col-12 col-lg-4  user-profile-container">
@@ -89,14 +97,14 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5" >
+        <div class="row mt-5">
             <div class="col-12 col-lg-6">
                 <div class="skills-chart">
                     <div class="skills-chart__box">
                         <p class="skills-chart__name">web design</p>
-                        <p class="skills-chart__percentage">90%</p>
+                        <p class="skills-chart__percentage">60%</p>
                         <div class="skills-chart__skill">
-                            <div class="skills-chart__level" style="width: 90%"></div>
+                            <div class="skills-chart__level" style="width: 60%"></div>
                         </div>
                     </div>
                 </div>
@@ -105,22 +113,22 @@
                 <div class="skills-chart">
                     <div class="skills-chart__box">
                         <p class="skills-chart__name">web development</p>
-                        <p class="skills-chart__percentage">90%</p>
+                        <p class="skills-chart__percentage">70%</p>
                         <div class="skills-chart__skill">
-                            <div class="skills-chart__level" style="width: 90%"></div>
+                            <div class="skills-chart__level" style="width: 70%"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-12 col-lg-6">
                 <div class="skills-chart">
                     <div class="skills-chart__box">
                         <p class="skills-chart__name">Seo</p>
-                        <p class="skills-chart__percentage">90%</p>
+                        <p class="skills-chart__percentage">45%</p>
                         <div class="skills-chart__skill">
-                            <div class="skills-chart__level" style="width: 90%"></div>
+                            <div class="skills-chart__level" style="width: 45%"></div>
                         </div>
                     </div>
                 </div>
@@ -129,9 +137,9 @@
                 <div class="skills-chart">
                     <div class="skills-chart__box">
                         <p class="skills-chart__name">UI/UX</p>
-                        <p class="skills-chart__percentage">90%</p>
+                        <p class="skills-chart__percentage">30%</p>
                         <div class="skills-chart__skill">
-                            <div class="skills-chart__level" style="width: 90%"></div>
+                            <div class="skills-chart__level" style="width: 30%"></div>
                         </div>
                     </div>
                 </div>
@@ -140,9 +148,47 @@
         <div></div>
     </section>
     <hr>
-    <section class="contact">
-        <h2 class="text-uppercase text-center">contact</h2>
-        <div class="row py-3 mt-lg-5">
+
+    <section class="projects" id="projects">
+        <h3 class="text-uppercase text-center mt-5">projects</h3>
+        <div class="row my-5">
+            <div class="col-12 col-lg-6 my-4 my-lg-0">
+                <div class="flip-card mx-auto">
+                    <div class="flip-card__front">
+                        <img class="flip-card__image" src="images/project1.png" alt="project picture!">
+                    </div>
+                    <div class="flip-card__back">
+                        <div class="flip-card__content">
+                            <h3 class="flip-card__title">shicko website</h3>
+                            <p class="flip-card__text flip-card__text--small">June 2018-September2018</p>
+                            <p class="flip-card__text">Development a Store Website with Laravel, Bootstrap, CSS, JS</p>
+                            <a class="flip-card__link" href="https://aminrafiei.ir" target="_blank">let's see</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="flip-card mx-auto">
+                    <div class="flip-card__front">
+                        <img class="flip-card__image" src="images/project2.png" alt="project picture!">
+                    </div>
+                    <div class="flip-card__back">
+                        <div class="flip-card__content">
+                            <h3 class="flip-card__title">sirco website</h3>
+                            <p class="flip-card__text flip-card__text--small">June 2018-September2018</p>
+                            <p class="flip-card__text">Development a Store Website with Laravel, Bootstrap, CSS, JS</p>
+                            <a class="flip-card__link" href="#projects">let's see</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <section class="contact" id="contact">
+        <h3 class="text-uppercase text-center mt-5">contact</h3>
+        <div class="row py-3 my-lg-5">
             <div class="col-12 col-lg-4">
                 <div class="content-box my-3 mx-auto ">
                     <div class="content-box__icon-container">
@@ -179,8 +225,32 @@
 
         </div>
     </section>
+    <a class="scroll-to-top" id="scrollToTop" href="#">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 </div>
+
+<footer class="footer">
+    <p class="footer-text">&copy; Copyright 2018. All Rights Reserved.</p>
+</footer>
+
+
 <script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function () {
+           if($(this).scrollTop() > 200){
+                $('.scroll-to-top').fadeIn();
+           }else{
+               $('.scroll-to-top').fadeOut();
+           }
+        });
+        $('.scroll-to-top').click(function () {
+            $('html,body').animate({scrollTop: 0}, 1000)
+        });
+    });
+</script>
+
 <script type="text/javascript" src="typed.js"></script>
 <!--<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>-->
 <script src="js/bootstrap.min.js"></script>
