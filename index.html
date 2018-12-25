@@ -76,8 +76,8 @@
     </div>
 </header>
 <div class="container">
-    <section class="about" id="about">
 
+    <section class="about" id="about">
         <div class="row">
             <div class="col-12 col-lg-4  user-profile-container">
                 <img class="about__user-profile" src="images/user-profile2.jpg" alt="user profile!">
@@ -85,11 +85,11 @@
             <div class="col-12 col-lg-8 p-5 mt-4 mt-lg-0 about__content">
                 <h2 class="about__question">who i am?</h2>
                 <h1 class="about__answer">hello i'm reza mirdamadi tehrani the front-end developer</h1>
-                <p class="about__description">I am reza mirdamadi tehrani. I am a junior web design and developer. I
-                    have been working for a year in this technology. I am very experience person. I have more than
-                    thousand of happy client and thy are fully satisfied for my works. I all time try to give awesome
-                    support of my client. Any Doubt and any without any confuse you can bought my theme for your
-                    business.</p>
+                <p class="about__description">I'm a front end software engineer who enjoys building things that live on
+                    the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user
+                    interfaces while being clean and efficient behind the scenes.
+                <p class="about__description">I enjoy constantly learning and improving my skills with the many technologies that power the
+                    web!</p>
                 <div class="about__button-container">
                     <a class="about__button about__button--left" href="#">read more</a>
                     <a class="about__button about__button--right" href="#">download <span
@@ -104,7 +104,7 @@
                         <p class="skills-chart__name">web design</p>
                         <p class="skills-chart__percentage">60%</p>
                         <div class="skills-chart__skill">
-                            <div class="skills-chart__level" id="webDesign" ></div>
+                            <div class="skills-chart__level" id="webDesign"></div>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                         <p class="skills-chart__name">web development</p>
                         <p class="skills-chart__percentage">70%</p>
                         <div class="skills-chart__skill">
-                            <div class="skills-chart__level" id="webDevelopment" ></div>
+                            <div class="skills-chart__level" id="webDevelopment"></div>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                         <p class="skills-chart__name">Seo</p>
                         <p class="skills-chart__percentage">45%</p>
                         <div class="skills-chart__skill">
-                            <div class="skills-chart__level" id="seo" ></div>
+                            <div class="skills-chart__level" id="seo"></div>
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                         <p class="skills-chart__name">UI/UX</p>
                         <p class="skills-chart__percentage">30%</p>
                         <div class="skills-chart__skill">
-                            <div class="skills-chart__level" id="uiUx" ></div>
+                            <div class="skills-chart__level" id="uiUx"></div>
                         </div>
                     </div>
                 </div>
@@ -188,6 +188,15 @@
     <hr>
     <section class="contact" id="contact">
         <h3 class="text-uppercase text-center mt-5">contact</h3>
+
+        <div class="row my-5">
+            <div class="col-12">
+                <div class="message">
+                    <p class="">my inbox is always open. Whether for a potential project or just to say hi, I'll try my best to answer your email!</p>
+                </div>
+            </div>
+        </div>
+
         <div class="row py-3 my-lg-5">
             <div class="col-12 col-lg-4">
                 <div class="content-box my-3 mx-auto ">
@@ -208,6 +217,7 @@
                     <div class="content-box__content">
                         <h3 class="content-box__subject">email</h3>
                         <p class="content-box__text">mirdamadi.reza.98@gmail.com</p>
+                        <a class="content-box__link" href="mailto:irdamadi.reza.98@gmail.com?subject=personal-site">say hi!</a>
                     </div>
                 </div>
             </div>
@@ -237,34 +247,34 @@
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(window).scroll(function () {
-           if($(this).scrollTop() > 200){
+            if ($(this).scrollTop() > 200) {
                 $('.scroll-to-top').fadeIn();
-           }else{
-               $('.scroll-to-top').fadeOut();
-           }
+            } else {
+                $('.scroll-to-top').fadeOut();
+            }
         });
         $('.scroll-to-top').click(function () {
             $('html,body').animate({scrollTop: 0}, 1000)
         });
 
         var targetEl = $('.first-row'),
-            targetElOffset = targetEl.offset().top/2,
+            targetElOffset = targetEl.offset().top / 2,
             documentEl = $(document),
             webDesignEl = $('#webDesign'),
             webDevelopmentEl = $('#webDevelopment'),
             seo = $('#seo'),
             uiUxEl = $('#uiUx'),
-            first =true;
-        documentEl.on('scroll',function(){
-           if(documentEl.scrollTop() > targetElOffset && first === true){
-               webDesignEl.toggleClass('w-60');
-               webDevelopmentEl.toggleClass('w-70');
-               seo.toggleClass('w-45');
-               uiUxEl.toggleClass('w-30');
-               first = false;
-           }
+            first = true;
+        documentEl.on('scroll', function () {
+            if (documentEl.scrollTop() > targetElOffset && first === true) {
+                webDesignEl.toggleClass('w-60');
+                webDevelopmentEl.toggleClass('w-70');
+                seo.toggleClass('w-45');
+                uiUxEl.toggleClass('w-30');
+                first = false;
+            }
         });
     });
 </script>

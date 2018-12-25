@@ -5,7 +5,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+a:hover{
+    text-decoration: none;
+}
 .header {
     position: relative;
     width: 100%;
@@ -276,7 +278,16 @@ body {
     width: 100%;
     height: auto;
 }
-
+.contact .message{
+    /*background-color: #3c6382;*/
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: #0a3d62;
+}
+.contact .message:nth-child(1){
+    text-transform: capitalize;
+}
 /**********content box************/
 .content-box {
     position: relative;
@@ -285,6 +296,7 @@ body {
     background-color: #496476;
     border-radius: 5px;
     text-transform: capitalize;
+    overflow: hidden;
 }
 
 .content-box__icon-container {
@@ -321,8 +333,10 @@ body {
     opacity: 1;
 }
 
-.content-box__subject {
-
+.content-box__link{
+    color: #0a3d62;
+    background-color: white;
+    padding: 5px;
 }
 /***********************************/
 .scroll-to-top{
@@ -456,7 +470,6 @@ body {
         transition: .3s;
     }
     .flip-card__link:hover{
-        text-decoration: none;
         color: #0a3d62;
         box-shadow: 0 0 10px 0 #fff;
     }
@@ -492,6 +505,11 @@ body {
         top: 50%;
         opacity: 1;
     }
+    .content-box__link:hover{
+        color: #0a3d62;
+        box-shadow: 0 0 10px 0 #fff;
+    }
+    /*****************************************/
     .social-media{
         bottom: 200px;
     }
