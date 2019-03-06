@@ -244,9 +244,21 @@
     <p class="footer-text">&copy; Copyright 2018. Reza Mirdamadi Tehrani</p>
 </footer>
 
+<div class="loader active"><i class="fas fa-spinner fast-spin"></i></div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script>
+	/*$(window).load(function() {
+		// Animate loader off screen
+		$(".loader").fadeOut("slow");
+	});*/
+	$(window).on("load", function() {
+		$(".loader").fadeOut("slow");
+	});
+	/*window.addEventListener("load", function () {
+		const loader = document.querySelector(".loader");
+		loader.classList.remove("active");
+	});*/
     $(document).ready(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 200) {

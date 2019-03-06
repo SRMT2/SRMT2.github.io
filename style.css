@@ -366,7 +366,30 @@ a:hover{
     display: inline-block;
     margin-top: 20px;
 }
-
+/*----------------------------
+#loader
+----------------------------*/
+.loader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1021;
+	background-color: #fff;
+}
+.loader i{
+	font-size: 5rem;
+	color: #0c5460;
+}
+.fast-spin {
+  -webkit-animation: fa-spin 1s infinite linear;
+  animation: fa-spin 1s infinite linear;
+}
+/****************************/
 @media screen AND (min-width: 576px) {
     .about__button {
         padding: 10px 60px;
