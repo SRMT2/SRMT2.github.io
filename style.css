@@ -153,6 +153,9 @@ a:hover{
 .about__description {
     text-transform: lowercase;
 }
+.about__description::first-letter{
+	text-transform: uppercase;
+}
 
 .about__button-container {
     position: relative;
